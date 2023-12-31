@@ -4,63 +4,73 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+     <!-- font-family: "Roboto","Raleway" -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"rel="stylesheet">
+  <!-- local-styles -->
+  <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <!-- Шапка -->
     <header>
       <nav>
-        <a href="./index.htm">WebStudio</a>
+        <a class="logo" href="./index.htm">Web<span class="logo-black">Studio</span></a>
         <ul>
-          <li><a href="./index.html">Studio</a></li>
-          <li><a href="./portfolio.html">Portfolio</a></li>
-          <li><a href="">Contacts</a></li>
+          <li><a class="link" href="./index.html">Studio</a></li>
+          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
+          <li><a class="link" href="">Contacts</a></li>
         </ul>
       </nav>
 
-      <ul>
+      <ul class="header-contacts list">
         <li>
           <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
         </li>
-        <li><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        <li>
+          <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+        </li>
       </ul>
     </header>
     <!-- Герой -->
-    <section>
-      <h1>
-        Effective Solutions<br />
-        for Your Business
-      </h1>
-      <button type="button">Order Service</button>
-    </section>
+    <div class="hero-container">
+      <section class="hero">
+        <h1 class="hero-title">
+          Effective Solutions<br />
+          for Your Business
+        </h1>
+        <button class="hero-button" type="button">Order Service</button>
+      </section>
+    </div>   
     <main>
       <!-- Про нас -->
-      <section>
-        <h2>About us</h2>
-        <ul>
+      <section class="section">
+        <h2 class="hidden section-title">About us</h2>
+        <ul class="features list">
           <li>
-            <h3>Strategy</h3>
-            <p>
+            <h3 class="title">Strategy</h3>
+            <p class="features-text">
               Our goal is to identify the business problem to walk away with the
               perfect and creative solution.
             </p>
           </li>
           <li>
-            <h3>Punctuality</h3>
-            <p>
+            <h3 class="title">Punctuality</h3>
+            <p class="features-text">
               Bring the key message to the brand's audience for the best price
               within the shortest possible time.
             </p>
           </li>
           <li>
-            <h3>Diligence</h3>
-            <p>
+            <h3 class="title">Diligence</h3>
+            <p class="features-text">
               Research and confirm brands that present the strongest digital
               growth opportunities and minimize risk.
             </p>
           </li>
           <li>
-            <h3>Technologies</h3>
-            <p>
+            <h3 class="title">Technologies</h3>
+            <p class="features-text">
               Design practice focused on digital experiences. We bring forth a
               deep passion for problem-solving.
             </p>
@@ -68,9 +78,9 @@
         </ul>
       </section>
       <!-- Чем мы занимаемся  -->
-      <section>
-        <h2>What are we doing</h2>
-        <ul>
+      <section class="section">
+        <h2 class="section-title">What are we doing</h2>
+        <ul class="our-activities list">
           <li>
             <img
               src="./images/rectangle-72.jpg"
@@ -95,36 +105,36 @@
         </ul>
       </section>
       <!-- Наша команда -->
-      <section>
-        <h2>Our Team</h2>
-        <ul>
+      <section class="our-team-section">
+        <h2 class="section-title">Our Team</h2>
+        <ul class="our-team-list list">
           <li>
             <img src="./images/img1.jpg" alt="Mark Guerrero" />
-            <p>Mark Guerrero</p>
-            <p>Product Designer</p>
+            <p class="title">Mark Guerrero</p>
+            <p class="our-team-item-text">Product Designer</p>
           </li>
           <li>
             <img src="./images/img2.jpg" alt="Tom Ford" />
-            <p>Tom Ford</p>
-            <p>Frontend Developer</p>
+            <p class="title">Tom Ford</p>
+            <p class="our-team-item-text">Frontend Developer</p>
           </li>
           <li>
             <img src="./images/img3.jpg" alt="Camila Garcia" />
-            <p>Camila Garcia</p>
-            <p>Marketing</p>
+            <p class="title">Camila Garcia</p>
+            <p class="our-team-item-text">Marketing</p>
           </li>
           <li>
             <img src="./images/img4.jpg" alt="Daniel Wilson" />
-            <p>Daniel Wilson</p>
-            <p>UI Designer</p>
+            <p class="title">Daniel Wilson</p>
+            <p class="our-team-item-text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <!-- Подвал -->
-    <footer>
-      <a href="./index.htm">WebStudio</a>
-      <p>
+    <footer class="footer">
+      <a class="logo" href="./index.htm">Web<span class="logo-white">Studio</span></a>
+      <p class="footer-text">
         Increase the flow of customers and<br />
         sales for your business with digital<br />
         marketing & growth solutions.
