@@ -185,6 +185,7 @@ body {
 }
 .footer {
  background-color: var(--navy-blue);
+ letter-spacing: 0.02em;
  
 }
 .studio {
